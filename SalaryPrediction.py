@@ -8,4 +8,4 @@ e=st.number_input("Enter the experince")
 if st.button("PREDICT"):
   s=model.predict([[e]]).squeeze()
   s=int(s)
-  st.succces('salary is {s}'.format('s'))
+  st.succces(f'Salary is {s}')
